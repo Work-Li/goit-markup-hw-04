@@ -94,12 +94,11 @@ body {
   color: var(--secondary-text-color);
   align-items: center;
 }
-/* .header-contact .link::before {
-  background-image: url("../images/icon/envelope-header.svg")
-  content: "";
-  width: 16px;
-  height: 12px;
-} */
+.header-contact .icon-item {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 
 .page-header .container {
   display: flex;
@@ -111,7 +110,6 @@ body {
   display: flex;  
   align-items: center;
 }
-
 
 /*HERO*/
 .hero {
@@ -173,30 +171,21 @@ body {
 .advantages .list-item {
   width: calc((100% - 90px) / 4);
 }
-.pseudo::before {
-  display: block;
-  content: '';
+
+.thumb {
   width: 270px;
   height: 120px;
   background-color: var(--background-btn-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
+  
 }
-.pseudo:nth-child(1)::before {
-  background-image: url(../images/icon/antenna.svg);
-}
-.pseudo:nth-child(2)::before {
-  background-image: url(../images/icon/clock.svg);
-}
-.pseudo:nth-child(3)::before {
-  background-image: url(../images/icon/diagram.svg);
-}
-.pseudo:nth-child(4)::before {
-  background-image: url(../images/icon/astronaut.svg);
+.thumb .icon-item {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list-item-title {
