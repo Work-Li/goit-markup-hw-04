@@ -27,10 +27,11 @@ body {
 
 
 .link {
-  display: block;
+  display: flex;
   text-decoration: none;
   color: inherit;
   font-style: inherit;
+  align-items: center;
   
 }
 
@@ -131,7 +132,7 @@ body {
   margin-right: auto;
   background-color: var(--dark-background);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url('../images/hero-background.jpg');
+  url('../images/hero/hero-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -265,7 +266,7 @@ body {
 }
 
 .team-card > .list-item-text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .social-networks {
   display: flex;
@@ -311,8 +312,8 @@ body {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  
 }
-/* .clients .list-item: */
 .hover-boder:hover {
   border: 1px solid var(--active-color);
 }
@@ -322,9 +323,13 @@ body {
   height: 60px;
   align-content: center;
   fill: currentColor;
-
-
 }
+.hover-boder .link {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 .clients .list-item:not(:last-child) {
   margin-right: 30px;
 }
